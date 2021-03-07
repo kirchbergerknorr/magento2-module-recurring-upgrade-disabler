@@ -1,0 +1,20 @@
+{
+  "name": "snk/magento2-module-recurring-upgrade-disabler",
+  "description": "Magento 2 module for disabling recurring upgrade scripts",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*",
+    "php": ">=7.2"
+  },
+  "license": [
+    "MIT"
+  ],
+  "autoload": {
+    "files": [
+      "src/registration.php"
+    ],
+    "psr-4": {
+      "Snk\\RecurringUpgradeDisabler\\": "src"
+    }
+  }
+}

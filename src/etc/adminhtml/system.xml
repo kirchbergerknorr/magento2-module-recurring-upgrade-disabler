@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author      Oleh Kravets <oleh.kravets@snk.de>
+ * @copyright   Copyright (c) 2021 schoene neue kinder GmbH  (https://www.snk.de)
+ * @license     https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="system" translate="label" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+            <group id="recurring_upgrade" translate="label" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Recurring Upgrade Scripts</label>
+                <field id="disabled_module_list" translate="label comment" type="textarea" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
+                    <label>Modules to disable recurring scripts</label>
+                    <comment>Comma-separated list of module names recurring scripts of which must not be executed</comment>
+                    <depends><field id="disable">1</field></depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
